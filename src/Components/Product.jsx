@@ -1,4 +1,4 @@
-import { FavoriteBorderOutlined, LogoDevOutlined, SearchOutlined, ShoppingCartOutlined } from '@mui/icons-material';
+import { FavoriteBorderOutlined,  SearchOutlined, ShoppingCartOutlined } from '@mui/icons-material';
 import React from 'react';
 import styled from 'styled-components';
 import { Center } from './../Styled/Navbar.styled';
@@ -59,6 +59,7 @@ const Icon = styled.div`
  align-items:center;
  justify-content:center;
  margin: 8px;
+ cursor: pointer;
  transition:.5s ease;
  &:hover{
     transform:scale(1.1);
