@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Arrow, Button, Container, Des, Image, ImageContainer, InfoContainer, Slide, Title, Wrapper } from '../Styled/Slider.styled';
 import slideImg from '../image/slideImg.png'
 import { sliderItems } from '../Data';
+import { Link } from 'react-router-dom';
 
 
 const Slider = () => {
@@ -29,7 +30,7 @@ const Slider = () => {
                             <InfoContainer>
                                 <Title>{item.title}</Title>
                                 <Des>{item.desc}</Des>
-                                <Button>SHOP NOW</Button>
+                                <Link to="products"><Button>SHOP NOW</Button></Link>
                             </InfoContainer>
                         </Slide>
                     ))

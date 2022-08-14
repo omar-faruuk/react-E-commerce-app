@@ -1,5 +1,6 @@
 import { FavoriteBorderOutlined,  SearchOutlined, ShoppingCartOutlined } from '@mui/icons-material';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { Center } from './../Styled/Navbar.styled';
 
@@ -74,7 +75,7 @@ const Product = ({product}) => {
           <Image src={product.img}/>
           <Info>
             <Icon>
-               <ShoppingCartOutlined/>  
+               <Link to="cart"><ShoppingCartOutlined/></Link>  
             </Icon>
             <Icon>
                <SearchOutlined/>

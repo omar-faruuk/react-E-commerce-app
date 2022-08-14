@@ -7,6 +7,7 @@ import Navbar from '../Components/Navbar';
 import Newsletter from '../Components/Newsletter';
 import clothImg from '../image/ant-miner-VK48kub0ibk-unsplash.jpg';
 import { mobile } from './../Responsive';
+import { Link } from 'react-router-dom';
 
 const Container = styled.div`
  
@@ -153,7 +154,7 @@ const Product = () => {
                             <Ammount>1</Ammount>
                             <Add />
                         </AddAmount>
-                        <Button>ADD TO CART</Button>
+                        <Link to=""><Button>ADD TO CART</Button></Link>
                     </AddContainer>
                 </InfoContainer>
             </Wrapper>

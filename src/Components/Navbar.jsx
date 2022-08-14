@@ -1,6 +1,7 @@
 import { Search, ShoppingCartOutlined } from '@mui/icons-material';
 import { Badge } from '@mui/material';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Center, Container, Left, MenuItem, Right, SearchContainer, Wrapper } from '../Styled/Navbar.styled';
 
 const Navbar = () => {
@@ -18,8 +19,9 @@ const Navbar = () => {
                     <h1>OMAR.</h1>
                 </Center>
                 <Right>
-                    <MenuItem>Register</MenuItem>
-                    <MenuItem>Login</MenuItem>
+                    <MenuItem><Link to="home">Home</Link></MenuItem>
+                    <MenuItem><Link to="/register">Register</Link></MenuItem>
+                    <MenuItem><Link to="/login">Login</Link></MenuItem>
                     <MenuItem>
                     <Badge badgeContent={4} color='secondary'>
                         <ShoppingCartOutlined/>
